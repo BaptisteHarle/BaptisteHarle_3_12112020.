@@ -190,3 +190,7 @@
 #desSens .restaurants__restaurant--preview {
   background: url('./assets/img/des_sens.jpg');
 }
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
