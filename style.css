@@ -274,3 +274,29 @@ a, a:visited {
   text-decoration: none;
   color: black;
 }
+
+/**
+*
+* Restaurants
+*
+**/
+
+main {
+  margin-top: -6%;
+  background-color: var(--lightgrey);
+}
+.menu-section {
+   background-color: white;
+    border-radius: 10px;
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+p {
+  margin-top: 6%;
+}
+h5 {
+  position: absolute;
+    margin-top: 0%
+}
