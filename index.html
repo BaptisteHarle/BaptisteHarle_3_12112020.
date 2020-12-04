@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OhMyFood!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
   <form class="location">
     <i class="fas fa-map-marker-alt"></i>
-    <input>Paris, Belleville</input>
+    <input type="text" id="villes">Paris, Belleville</input>
   </form>
 
   <section class="explore">
@@ -30,17 +30,17 @@
     <div class="usage--item">
       <div class="usage--item--step">1</div>
       <i class="fas fa-mobile-alt"></i>
-      <span class="usage--item--label">Choisissez un restaurant</span>
+      <p class="usage--item--label">Choisissez un restaurant</p>
     </div>
     <div class="usage--item">
       <div class="usage--item--step">2</div>
       <i class="fas fa-list-ul"></i>
-      <span class="usage--item--label">Composez votre menu</span>
+      <p class="usage--item--label">Composez votre menu</p>
     </div>
     <div class="usage--item">
       <div class="usage--item--step">3</div>
       <i class="fas fa-store"></i>
-      <span class="usage--item--label">Degustez au restaurant</span>
+      <p class="usage--item--label">Degustez au restaurant</p>
     </div>
   </section>
 
@@ -51,13 +51,13 @@
     <a href="./view/note.html">
       <div id="paletteDuGout" class="restaurants__restaurant">
         <div class="restaurants__restaurant--preview">
-          <span class="restaurants__restaurant--preview--new">Nouveau</span>
+          <p class="restaurants__restaurant--preview--new">Nouveau</p>
         </div>
         <div class="restaurants__restaurant__infos">
-          <div class="restaurants__restaurant__infos__text">
+          <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">La note enchantee</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Charonne</p>
-          </div>
+          </section>
           <i class="far fa-heart"></i>
         </div>
       </div>
@@ -67,15 +67,15 @@
     <a href="./view/palette.html">
       <div id="noteEnchantee" class="restaurants__restaurant">
         <div class="restaurants__restaurant--preview">
-          <span class="restaurants__restaurant--preview--new">Nouveau</span>
+          <p class="restaurants__restaurant--preview--new">Nouveau</p>
         </div>
         <div class="restaurants__restaurant__infos">
-          <div class="restaurants__restaurant__infos__text">
+          <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">La palette du gout</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Menilmontant</p>
-          </div>
+          </section>
           <i class="far fa-heart"></i>
-        </div>
+        </section>
       </div>
     </a>
     <!-- fin restaurant unitaire -->
@@ -84,10 +84,10 @@
       <div id="francaise" class="restaurants__restaurant">
         <div class="restaurants__restaurant--preview"></div>
         <div class="restaurants__restaurant__infos">
-          <div class="restaurants__restaurant__infos__text">
+          <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">A la francaise</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Cite rouge</p>
-          </div>
+          </section>
           <i class="far fa-heart"></i>
         </div>
       </div>
@@ -98,10 +98,10 @@
       <div id="desSens" class="restaurants__restaurant">
         <div class="restaurants__restaurant--preview"></div>
         <div class="restaurants__restaurant__infos">
-          <div class="restaurants__restaurant__infos__text">
+          <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">Le delice des sens</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Folie-Mericourt</p>
-          </div>
+          </section>
           <i class="far fa-heart"></i>
         </div>
       </div>
