@@ -1,7 +1,7 @@
 :root {
   --primary: #9356dc;
   --primary-soft: #9256dc2f;
-  --secondary: #FF79da;
+  --secondary: #ff79da;
   --third: #99E2d0;
   --third-stronger: #3dad93;
   --lightgrey: #f6f6f6;
@@ -9,7 +9,7 @@
   --grey: #9e9e9e;
   --darkgrey: #363636;
   --black: #000;
-  --white: white;
+  --white: #fff;
 }
 
 html, 
@@ -17,7 +17,7 @@ body {
   width: 100%;
   /* background: red; */
   margin: unset;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:'Segoe UI', 'Helvetica Neue', sans-serif;
 }
 
 .header {
@@ -134,12 +134,27 @@ body {
   margin-top: 10px;
 }
 
-.explore--btn {
+section button {
   width: 220px;
   height: 50px;
   background: linear-gradient(var(--secondary), var(--primary));
   border-radius: 25px;
   margin-top: 30px;
+  border: unset;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.explore--btn {
+  width: 220px;
+  height: 50px;
+  background: linear-gradient(var(--secondary), var(--primary));
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 54px;
   border: unset;
   font-weight: 500;
   font-size: 16px;
@@ -207,18 +222,32 @@ body {
   border-radius: 16px;
 }
 
-.restaurants {
+.restaurant {
   width: calc(100% - 48px);
   background: var(--lightgrey);
   /* height: 300px; */
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 22px;
+  padding-top: 11px;
   padding-bottom: 22px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-top: 53%;
+}
+.restaurant i {
+ position: absolute;
+ top: 235px;
+ right: 45px;
+ font-size: 20px;
+}
+.restaurant h1 {
+  font-size: 25px;
 }
 
-.restaurants h3 {
-  font-size: 24px;
+article h3 {
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px solid var(--third);
 }
 
 .restaurants__restaurant {
@@ -233,10 +262,10 @@ body {
 .restaurants__restaurant--preview {
   height: 180px;
   width: 100%;
-  background: yellow;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+}
+.restaurants__restaurant--preview--photo {
+   width: 100%;
+   height: auto;
 }
 
 .restaurants__restaurant--preview--new {
