@@ -247,7 +247,6 @@ section button {
 article h3 {
   font-size: 20px;
   font-weight: normal;
-  border-bottom: 1px solid var(--third);
 }
 
 .restaurants__restaurant {
@@ -353,4 +352,10 @@ p {
 h5 {
   position: absolute;
     margin-top: 0%
+}
+.green-line {
+  border-bottom: 3px solid var(--third);
+    width: 37px;
+    margin-top: -20px;
+    margin-bottom: 18px;
 }
