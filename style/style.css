@@ -359,3 +359,26 @@ h5 {
     margin-top: -20px;
     margin-bottom: 18px;
 }
+
+/**
+*
+* Desktop
+*
+**/
+
+@media only screen and (min-width: 1024px) {
+  
+  .menu {
+    display: flex;
+  }
+  .explore--btn {
+    margin-left: 45%;
+  }
+  .footer {
+    align-items: center;
+  }
+  .footer__links {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
