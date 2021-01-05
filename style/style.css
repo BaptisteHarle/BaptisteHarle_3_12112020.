@@ -20,6 +20,11 @@ body {
   font-family:'Segoe UI', 'Helvetica Neue', sans-serif;
 }
 
+figure {
+  margin: unset;
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -222,7 +227,7 @@ section button {
   border-radius: 16px;
 }
 
-.restaurant {
+.restaurants {
   width: calc(100% - 48px);
   background: var(--lightgrey);
   /* height: 300px; */
@@ -232,7 +237,6 @@ section button {
   padding-bottom: 22px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-  margin-top: 53%;
 }
 .restaurant i {
  position: absolute;
@@ -282,7 +286,6 @@ article h3 {
 .restaurants__restaurant--infos {
   height: 70px;
   width: 100%;
-  /* background :red; */
 }
 
 .far.fa-heart {
@@ -303,6 +306,7 @@ article h3 {
   height: 70px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: -29%;
 }
 
 .restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
@@ -325,6 +329,9 @@ a, a:visited {
   color: black;
 }
 
+img {
+  width: 100%;
+}
 /**
 *
 * Restaurants
