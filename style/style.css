@@ -439,10 +439,6 @@ h5 {
 
 @media only screen and (min-width: 1024px) {
  
-  .location i {
-    position: unset;
-    left: unset;
-  }
   .location input {
     margin-left: 15px;
   }
@@ -468,15 +464,16 @@ h5 {
     text-align: center;
   }
 
-  .grid-desktop {
-
-  }
   .menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    
   }
   .menu-section {
     display: block;
-    width: 20%;
+    width: unset;
     text-align: center;
   }
   section h5 {
@@ -492,7 +489,60 @@ h5 {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+  .location i {
+    position: unset;
+    left: unset;
+  }
+  .restaurants {
+    min-height: 700px;
+  }
+  .target-rest {
+    width: 65%;
+    text-align: center;
+    margin-left: calc(35% / 2);
+  }
+  .restaurants__restaurant__infos {
+    margin-top: -18%;
+  }
+  .restaurants__restaurant__infos__text--subtitle {
+    margin-top: 20px
+  }
+  .restaurants__restaurant--preview--new {
+    margin-top: 10px;
+    margin-left: 110px;
+  }
   .menu-section aside {
     display: none;
+  }
+  article h3 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
+  }
+  .one {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  }
+  .two {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  }
+  .three {
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+  .four {
+    grid-row-start: 2;
+    grid-column-start: 4;
+  }
+  .special-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .menu-section .price {
+    transition: none;
+    margin-left: unset;
   }
 }
