@@ -403,9 +403,48 @@ h5 {
 **/
 
 @media only screen and (min-width: 1024px) {
+ 
+  .location i {
+    position: relative;
+  }
+  .location input {
+    margin-left: 15px;
+  }
+  section h2 {
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .usage--item {
+    width: 27%;
+  }
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .restaurants h3 {
+    position: absolute;
+  }
+  .restaurant h1 {
+    text-align: center;
+  }
   
+  .grid-desktop {
+
+  }
   .menu {
     display: flex;
+  }
+  .menu-section {
+    display: block;
+    width: 20%;
+    text-align: center;
+  }
+  section h5 {
+    position: relative;
   }
   .explore--btn {
     margin-left: 45%;
