@@ -94,24 +94,32 @@ figure {
 **/
 
 .location {
-  width: calc(100% - 32px);
+  width: 100%;
   height: 50px;
   background: var(--altgrey);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 32px;
   margin-top: 60px;
 }
 
-.location h3 {
-  font-size: 16px;
+.location input {
+  border: none;
+    background-color: var(--altgrey);
+    font-size: 16px;
+    margin-left: 55px;
+}
+::placeholder {
+  color: black;
+  margin-left: 15px;
   font-weight: 500;
 }
 
 .location i {
-  margin-right: 22px;
+  position: absolute;
+  left: 100px; 
 }
+
 
 .explore {
   display: flex;
