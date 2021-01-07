@@ -371,29 +371,64 @@ main {
 }
 
 .menu-section {
-   background-color: white;
-    border-radius: 10px;
-    margin: 3%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: white;
+   border-radius: 10px;
+   margin: 3%;
+   display: flex;
+   justify-content: space-between;
+   /* padding: 2%; */
+   padding-left: 10px;
+   padding-right: 10px;
+   overflow: hidden;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
+.menu-section aside{
+ position: relative;
+ right: -10px;
+ height: 65px;
+ width: 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: var(--third);
+}
+.price {
+ margin-left: 75px;
+}
+.menu-section aside, .menu-section i, .menu-section .price {
+  transition: all .25s ease;
+ }
+.menu-section i {
+ position: unset;
+ color: white;
+ transform: rotate(180deg);
+}
+.menu-section:hover {
+ cursor: pointer;
+}
+.menu-section:hover .price {
+ margin-left: 0px;
+}
+.menu-section:hover aside {
+ width: 65px;
+}
+.menu-section:hover aside i {
+ transform: rotate(0deg);
+}
 p {
-  margin-top: 6%;
+ margin-top: 30px;
+ font-size: 14px;
 }
-
 h5 {
-  position: absolute;
-    margin-top: 0%
+ position: absolute;
+ margin-top: 8px;
 }
 .green-line {
-   border-bottom: 3px solid var(--third);
-    width: 37px;
-    margin-top: -20px;
-    margin-left: 16px;
-    margin-bottom: 18px;
+  border-bottom: 3px solid var(--third);
+   width: 37px;
+   margin-top: -20px;
+   margin-left: 16px;
+   margin-bottom: 18px;
 }
 
 /**
@@ -405,7 +440,8 @@ h5 {
 @media only screen and (min-width: 1024px) {
  
   .location i {
-    position: relative;
+    position: unset;
+    left: unset;
   }
   .location input {
     margin-left: 15px;
@@ -431,7 +467,7 @@ h5 {
   .restaurant h1 {
     text-align: center;
   }
-  
+
   .grid-desktop {
 
   }
@@ -455,5 +491,8 @@ h5 {
   .footer__links {
     display: grid;
     grid-template-columns: 2fr 1fr;
+  }
+  .menu-section aside {
+    display: none;
   }
 }
