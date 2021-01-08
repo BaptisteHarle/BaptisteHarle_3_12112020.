@@ -16,7 +16,7 @@
 
   <form class="location">
     <i class="fas fa-map-marker-alt"></i>
-    <input type="text" id="villes">Paris, Belleville</input>
+    <input type="text" id="villes" placeholder="Paris, Belleville" />
   </form>
 
   <section class="explore">
@@ -27,32 +27,37 @@
 
   <section class="usage">
     <h2>Fonctionnement</h2>
-    <ul class="usage--item">
-      <li class="usage--item--step">1</li>
-      <i class="fas fa-mobile-alt"></i>
-      <li class="usage--item--label">Choisissez un restaurant</li>
-    </ul>
-    <ul class="usage--item">
-      <li class="usage--item--step">2</li>
-      <i class="fas fa-list-ul"></i>
-      <li class="usage--item--label">Composez votre menu</li>
-    </ul>
-    <ul class="usage--item">
-      <li class="usage--item--step">3</li>
-      <i class="fas fa-store"></i>
-      <li class="usage--item--label">Degustez au restaurant</li>
+    <ul>
+      <li class="usage--item">
+        <div class="usage--item--step">1</div>
+        <i class="fas fa-mobile-alt"></i>
+        Choisissez un restaurant
+      </li>
+
+      <li class="usage--item">
+        <div class="usage--item--step">2</div>
+        <i class="fas fa-list-ul"></i>
+        Composez votre menu
+      </li>
+
+      <li class="usage--item">
+        <div class="usage--item--step">3</div>
+        <i class="fas fa-store"></i>
+        Degustez au restaurant
+      </li>
     </ul>
   </section>
 
   <section class="restaurants">
-    <h3>Restaurants</h3>
+    <!-- <h3>Restaurants</h3> -->
 
     <!-- restaurant unitaire -->
-    <a href="view/note.html">
-      <div id="paletteDuGout" class="restaurants__restaurant">
-        <figure class="restaurants__restaurant--preview">
-          <img src="assets/img/palette_gout.jpg" alt="la palette du gout">
-        </figure>
+    <a href="view/note.html" class="target-rest">
+      <div class="grid-desktop">
+        <div id="paletteDuGout" class="restaurants__restaurant">
+          <figure class="restaurants__restaurant--preview">
+            <img src="assets/img/palette_gout.jpg" alt="la palette du gout">
+          </figure>
           <p class="restaurants__restaurant--preview--new">Nouveau</p>
         </div>
         <div class="restaurants__restaurant__infos">
@@ -62,54 +67,62 @@
           </section>
           <i class="far fa-heart"></i>
         </div>
+      </div>
     </a>
     <!-- fin restaurant unitaire -->
     <!-- restaurant unitaire -->
-    <a href="view/palette.html">
-      <div id="noteEnchantee" class="restaurants__restaurant">
-        <figure class="restaurants__restaurant--preview">
-          <img src="assets/img/note_enchantee.jpg" alt="note enchantee" class="restaurants__restaurant--preview--photo">
-        </figure>
+    <a href="view/palette.html" class="target-rest">
+      <div class="grid-desktop">
+        <div id="noteEnchantee" class="restaurants__restaurant">
+          <figure class="restaurants__restaurant--preview">
+            <img src="assets/img/note_enchantee.jpg" alt="note enchantee"
+              class="restaurants__restaurant--preview--photo">
+          </figure>
           <p class="restaurants__restaurant--preview--new">Nouveau</p>
-       </div>
+        </div>
         <div class="restaurants__restaurant__infos">
           <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">La palette du gout</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Menilmontant</p>
           </section>
           <i class="far fa-heart"></i>
+        </div>
       </div>
     </a>
     <!-- fin restaurant unitaire -->
     <!-- restaurant unitaire -->
-    <a href="view/francaise.html">
-      <div id="francaise" class="restaurants__restaurant">
-        <figure class="restaurants__restaurant--preview">
-          <img src="assets/img/francaise.jpg" alt="a la francaise">
-        </figure>
-      </div>
+    <a href="view/francaise.html" class="target-rest">
+      <div class="grid-desktop">
+        <div id="francaise" class="restaurants__restaurant">
+          <figure class="restaurants__restaurant--preview">
+            <img src="assets/img/francaise.jpg" alt="a la francaise">
+          </figure>
+        </div>
         <div class="restaurants__restaurant__infos">
           <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">A la francaise</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Cite rouge</p>
           </section>
           <i class="far fa-heart"></i>
+        </div>
       </div>
     </a>
     <!-- fin restaurant unitaire -->
     <!-- restaurant unitaire -->
-    <a href="view/delice.html">
-      <div id="desSens" class="restaurants__restaurant">
-        <figure class="restaurants__restaurant--preview">
-          <img src="assets/img/des_sens.jpg" alt="delice des sens">
-        </figure>
-      </div>
+    <a href="view/delice.html" class="target-rest">
+      <div class="grid-desktop">
+        <div id="desSens" class="restaurants__restaurant">
+          <figure class="restaurants__restaurant--preview">
+            <img src="assets/img/des_sens.jpg" alt="delice des sens">
+          </figure>
+        </div>
         <div class="restaurants__restaurant__infos">
           <section class="restaurants__restaurant__infos__text">
             <h3 class="restaurants__restaurant__infos__text--title">Le delice des sens</h3>
             <p class="restaurants__restaurant__infos__text--subtitle">Folie-Mericourt</p>
           </section>
           <i class="far fa-heart"></i>
+        </div>
       </div>
     </a>
     <!-- fin restaurant unitaire -->
@@ -129,4 +142,5 @@
     </ul>
   </footer>
 </body>
+
 </html>
