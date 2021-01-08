@@ -381,6 +381,26 @@ main {
    padding-right: 10px;
    overflow: hidden;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   opacity: 0;
+    margin-top: 20px;
+    animation-duration: 1.5s;
+    animation-name: smooth-appear;
+    animation-fill-mode: forwards;
+}
+.menu-section:nth-of-type(1) {
+  animation-delay: 250ms;
+}
+.menu-section:nth-of-type(2) {
+  animation-delay: 500ms;
+}
+.menu-section:nth-of-type(3) {
+  animation-delay: 750ms;
+}
+.menu-section:nth-of-type(4) {
+  animation-delay: 1000ms;
+}
+.menu-section:nth-of-type(5) {
+  animation-delay: 1250ms;
 }
 .menu-section aside{
  position: relative;
@@ -393,7 +413,9 @@ main {
  background: var(--third);
 }
 .price {
- margin-left: 75px;
+  position: absolute;
+  right: 30px;
+ /* margin-left: 75px; */
 }
 .menu-section aside, .menu-section i, .menu-section .price {
   transition: all .25s ease;
@@ -407,7 +429,8 @@ main {
  cursor: pointer;
 }
 .menu-section:hover .price {
- margin-left: 0px;
+ /* margin-left: 0px; */
+ right: 95px;
 }
 .menu-section:hover aside {
  width: 65px;
@@ -542,7 +565,19 @@ h5 {
     grid-template-rows: auto;
   }
   .menu-section .price {
+    position: unset;
     transition: none;
     margin-left: unset;
+  }
+}
+
+@keyframes smooth-appear {
+  from {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
