@@ -525,14 +525,14 @@ h5 {
     margin-left: calc(35% / 2);
   }
   .restaurants__restaurant__infos {
-    margin-top: -18%;
+    margin-top: -20%;
   }
   .restaurants__restaurant__infos__text--subtitle {
     margin-top: 20px
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
-    margin-left: 110px;
+    margin-left: 85px;
   }
   .menu-section aside {
     display: none;
@@ -579,5 +579,19 @@ h5 {
   to {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+/**
+*
+* Tablette
+*
+**/
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
+  .restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
