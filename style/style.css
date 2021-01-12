@@ -519,10 +519,14 @@ h5 {
   .restaurants {
     min-height: 700px;
   }
+  .restaurant i {
+   top: 274px;
+  }
   .target-rest {
     width: 65%;
     text-align: center;
     margin-left: calc(35% / 2);
+    margin: auto;
   }
   .restaurants__restaurant__infos {
     margin-top: -20%;
@@ -588,10 +592,47 @@ h5 {
 *
 **/
 
-@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
-  .restaurant {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
+  .restaurants {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .restaurant i {
+    top: 276px;
+  }
+  .restaurants h3 {
+    position: absolute;
+  }
+  .target-rest {
+    margin: 5%;
+  }
+  .location i {
+    position: absolute;
+    left: 270px;
+  }
+  .location input {
+   margin-left: unset;
+  }
+  .footer {
+    align-items: center;
+  }
+  .footer__links {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .explore--btn {
+    margin-left: 271px;
+  }
+  .menu-section {
+    width: 80%;
+    margin: 6%;
+  }
+  .price {
+    right: 122px;
+  }
+  .menu-section:hover .price {
+    right: 160px;
   }
 }
