@@ -519,20 +519,24 @@ h5 {
   .restaurants {
     min-height: 700px;
   }
+  .restaurant i {
+   top: 274px;
+  }
   .target-rest {
     width: 65%;
     text-align: center;
     margin-left: calc(35% / 2);
+    margin: auto;
   }
   .restaurants__restaurant__infos {
-    margin-top: -18%;
+    margin-top: -20%;
   }
   .restaurants__restaurant__infos__text--subtitle {
     margin-top: 20px
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
-    margin-left: 110px;
+    margin-left: 85px;
   }
   .menu-section aside {
     display: none;
@@ -579,5 +583,56 @@ h5 {
   to {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+/**
+*
+* Tablette
+*
+**/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .restaurant i {
+    top: 276px;
+  }
+  .restaurants h3 {
+    position: absolute;
+  }
+  .target-rest {
+    margin: 5%;
+  }
+  .location i {
+    position: absolute;
+    left: 270px;
+  }
+  .location input {
+   margin-left: unset;
+  }
+  .footer {
+    align-items: center;
+  }
+  .footer__links {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .explore--btn {
+    margin-left: 271px;
+  }
+  .menu-section {
+    width: 80%;
+    margin: 6%;
+  }
+  .price {
+    right: 122px;
+  }
+  .menu-section:hover .price {
+    right: 160px;
   }
 }
