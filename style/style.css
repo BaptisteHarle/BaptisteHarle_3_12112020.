@@ -10,6 +10,7 @@
   --darkgrey: #363636;
   --black: #000;
   --white: #fff;
+  --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 html, 
@@ -35,7 +36,7 @@ figure {
   justify-content: center;
   height: 60px;
   width: 100%;
-  background: white;
+  background: var(--white);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -147,33 +148,27 @@ figure {
   text-align: center;
 }
 
-
-section button {
+button {
   width: 220px;
   height: 50px;
   background: linear-gradient(var(--secondary), var(--primary));
-  border-radius: 25px;
-  margin-top: 30px;
-  border: unset;
   font-weight: 500;
   font-size: 16px;
   color: var(--white);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: var(--shadow);
+  border: unset;
+}
+
+section button {
+  border-radius: 25px;
+  margin-top: 30px;
 }
 
 .explore--btn {
-  width: 220px;
-  height: 50px;
-  background: linear-gradient(var(--secondary), var(--primary));
   border-radius: 25px;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 73px;
-  border: unset;
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--white);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .usage {
@@ -332,7 +327,7 @@ article h3 {
 
 .restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
   padding: unset;
-  margin: unset;
+  /* margin: unset; */
 }
 
 .restaurants__restaurant__infos__text--subtitle {
@@ -349,9 +344,7 @@ a, a:visited {
   text-decoration: none;
   color: black;
 }
-/* figure {
-  margin: unset;
-} */
+
 img {
   width: 100%;
 }
@@ -380,7 +373,7 @@ main {
    padding-left: 10px;
    padding-right: 10px;
    overflow: hidden;
-   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   box-shadow: var(--shadow);
    opacity: 0;
     margin-top: 20px;
     animation-duration: 1.5s;
@@ -454,6 +447,56 @@ h5 {
    margin-bottom: 18px;
 }
 
+/**
+*
+* Tablette
+*
+**/
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .restaurant i {
+    top: 276px;
+  }
+  .restaurants h3 {
+    position: absolute;
+  }
+  .target-rest {
+    margin: 5%;
+  }
+  .location i {
+    position: absolute;
+    left: 270px;
+  }
+  .location input {
+   margin-left: unset;
+  }
+  .footer {
+    align-items: center;
+  }
+  .footer__links {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .explore--btn {
+    margin-left: 271px;
+  }
+  .menu-section {
+    width: 80%;
+    margin: 6%;
+  }
+  .price {
+    right: 122px;
+  }
+  .menu-section:hover .price {
+    right: 160px;
+  }
+}
 /**
 *
 * Desktop
@@ -583,56 +626,5 @@ h5 {
   to {
     opacity: 1;
     margin-top: 0px;
-  }
-}
-
-/**
-*
-* Tablette
-*
-**/
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  
-  .restaurants {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .restaurant i {
-    top: 276px;
-  }
-  .restaurants h3 {
-    position: absolute;
-  }
-  .target-rest {
-    margin: 5%;
-  }
-  .location i {
-    position: absolute;
-    left: 270px;
-  }
-  .location input {
-   margin-left: unset;
-  }
-  .footer {
-    align-items: center;
-  }
-  .footer__links {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .explore--btn {
-    margin-left: 271px;
-  }
-  .menu-section {
-    width: 80%;
-    margin: 6%;
-  }
-  .price {
-    right: 122px;
-  }
-  .menu-section:hover .price {
-    right: 160px;
   }
 }
