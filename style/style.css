@@ -573,7 +573,7 @@ h5 {
   }
   .green-line {
     margin-top: 45px;
-    margin-left: 686px; 
+    margin-left: 825px; 
     position: absolute;
   }
   .target-rest {
@@ -629,6 +629,32 @@ h5 {
   }
   img {
     object-fit: contain;
+  }
+  .price {
+    position: absolute;
+    right: 30px;
+   /* margin-left: 75px; */
+  }
+  .menu-section aside, .menu-section i, .menu-section .price {
+    transition: all .25s ease;
+   }
+  .menu-section i {
+   position: unset;
+   color: white;
+   transform: rotate(180deg);
+  }
+  .menu-section:hover {
+   cursor: pointer;
+  }
+  .menu-section:hover .price {
+   /* margin-left: 0px; */
+   right: 95px;
+  }
+  .menu-section:hover aside {
+   width: 65px;
+  }
+  .menu-section:hover aside i {
+   transform: rotate(0deg);
   }
 }
 
