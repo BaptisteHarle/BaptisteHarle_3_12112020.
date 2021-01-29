@@ -527,6 +527,7 @@ h5 {
   }
   .restaurants h3 {
     position: absolute;
+    margin-top: -3px;
   }
   .restaurant h1 {
     text-align: center;
