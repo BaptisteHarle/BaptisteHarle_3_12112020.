@@ -504,7 +504,9 @@ h5 {
 **/
 
 @media only screen and (min-width: 1024px) {
- 
+  .lacarte {
+    margin-top: 500px;
+  }
   .location input {
     margin-left: 15px;
   }
@@ -563,7 +565,10 @@ h5 {
     min-height: 700px;
   }
   .restaurant i {
-   top: 274px;
+   top: 523px;
+  }
+  .entree {
+    margin-left: 350px;
   }
   .target-rest {
     width: 65%;
