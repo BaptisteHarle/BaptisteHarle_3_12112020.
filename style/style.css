@@ -570,6 +570,11 @@ h5 {
   .entree {
     margin-left: 350px;
   }
+  .green-line {
+    margin-top: 45px;
+    margin-left: 686px; 
+    position: absolute;
+  }
   .target-rest {
     width: 65%;
     text-align: center;
