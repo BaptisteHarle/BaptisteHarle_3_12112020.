@@ -326,8 +326,8 @@ article h3 {
 }
 
 .restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
-  padding: unset;
-  /* margin: unset; */
+  /* padding: unset;
+  margin: unset; */
 }
 
 .restaurants__restaurant__infos__text--subtitle {
@@ -615,6 +615,9 @@ h5 {
     position: unset;
     transition: none;
     margin-left: unset;
+  }
+  img {
+    object-fit: contain;
   }
 }
 
