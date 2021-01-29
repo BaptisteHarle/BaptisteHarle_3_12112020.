@@ -655,7 +655,9 @@ h5 {
    cursor: pointer;
   }
   .menu-section:hover aside {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .menu-section:hover aside i {
    transform: rotate(0deg);
