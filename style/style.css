@@ -582,11 +582,14 @@ h5 {
     margin-left: calc(35% / 2);
     margin: auto;
   }
+  .restaurants-image {
+    height: unset;
+  }
   .restaurants__restaurant__infos {
-    margin-top: -20%;
+    margin-top: -16%;
   }
   .restaurants__restaurant__infos__text--subtitle {
-    margin-top: 20px
+    margin-top: 30px
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
@@ -635,7 +638,7 @@ h5 {
     right: 30px;
    /* margin-left: 75px; */
   }
-  .menu-section aside, .menu-section i, .menu-section .price {
+  .menu-section aside, .menu-section i {
     transition: all .25s ease;
    }
   .menu-section i {
@@ -646,12 +649,12 @@ h5 {
   .menu-section:hover {
    cursor: pointer;
   }
-  .menu-section:hover .price {
-   /* margin-left: 0px; */
-   right: 95px;
-  }
   .menu-section:hover aside {
-   width: 65px;
+    position: absolute;
+    right: 577px;
+    margin-top: -129px;
+    height: 127px;
+    width: 100px;
   }
   .menu-section:hover aside i {
    transform: rotate(0deg);
