@@ -597,6 +597,11 @@ h5 {
   }
   .menu-section aside {
     display: none;
+    position: absolute;
+    right: 577px;
+    margin-top: -129px;
+    height: 127px;
+    width: 100px;
   }
   article h3 {
     grid-row-start: 1;
@@ -650,11 +655,7 @@ h5 {
    cursor: pointer;
   }
   .menu-section:hover aside {
-    position: absolute;
-    right: 577px;
-    margin-top: -129px;
-    height: 127px;
-    width: 100px;
+    display: block;
   }
   .menu-section:hover aside i {
    transform: rotate(0deg);
