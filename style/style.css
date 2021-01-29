@@ -326,8 +326,8 @@ article h3 {
 }
 
 .restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
-  padding: unset;
-  /* margin: unset; */
+  /* padding: unset;
+  margin: unset; */
 }
 
 .restaurants__restaurant__infos__text--subtitle {
@@ -504,7 +504,9 @@ h5 {
 **/
 
 @media only screen and (min-width: 1024px) {
- 
+  .lacarte {
+    margin-top: 500px;
+  }
   .location input {
     margin-left: 15px;
   }
@@ -525,6 +527,7 @@ h5 {
   }
   .restaurants h3 {
     position: absolute;
+    margin-top: -3px;
   }
   .restaurant h1 {
     text-align: center;
@@ -563,7 +566,15 @@ h5 {
     min-height: 700px;
   }
   .restaurant i {
-   top: 274px;
+   top: 523px;
+  }
+  .entree {
+    margin-left: 350px;
+  }
+  .green-line {
+    margin-top: 45px;
+    margin-left: 825px; 
+    position: absolute;
   }
   .target-rest {
     width: 65%;
@@ -571,11 +582,14 @@ h5 {
     margin-left: calc(35% / 2);
     margin: auto;
   }
+  .restaurants-image {
+    height: unset;
+  }
   .restaurants__restaurant__infos {
-    margin-top: -20%;
+    margin-top: -16%;
   }
   .restaurants__restaurant__infos__text--subtitle {
-    margin-top: 20px
+    margin-top: 30px
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
@@ -583,6 +597,11 @@ h5 {
   }
   .menu-section aside {
     display: none;
+    position: absolute;
+    right: 577px;
+    margin-top: -129px;
+    height: 127px;
+    width: 100px;
   }
   article h3 {
     grid-row-start: 1;
@@ -615,6 +634,33 @@ h5 {
     position: unset;
     transition: none;
     margin-left: unset;
+  }
+  img {
+    object-fit: contain;
+  }
+  .price {
+    position: absolute;
+    right: 30px;
+   /* margin-left: 75px; */
+  }
+  .menu-section aside, .menu-section i {
+    transition: all .25s ease;
+   }
+  .menu-section i {
+   position: unset;
+   color: white;
+   transform: rotate(180deg);
+  }
+  .menu-section:hover {
+   cursor: pointer;
+  }
+  .menu-section:hover aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-section:hover aside i {
+   transform: rotate(0deg);
   }
 }
 
