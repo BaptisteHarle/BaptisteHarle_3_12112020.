@@ -424,6 +424,7 @@ main {
 .menu-section:hover .price {
  /* margin-left: 0px; */
  right: 95px;
+ text-overflow: ellipsis;
 }
 .menu-section:hover aside {
  width: 65px;
