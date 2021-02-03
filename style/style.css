@@ -569,7 +569,7 @@ h5 {
    top: 523px;
   }
   .entree {
-    margin-left: 350px;
+    margin-left: 400px;
   }
   .green-line {
     margin-top: 45px;
@@ -597,11 +597,9 @@ h5 {
   }
   .menu-section aside {
     display: none;
-    position: absolute;
-    right: 577px;
-    margin-top: -129px;
-    height: 127px;
-    width: 100px;
+    position: relative;
+    width: 0%;
+    left: 0;
   }
   article h3 {
     grid-row-start: 1;
@@ -644,7 +642,7 @@ h5 {
    /* margin-left: 75px; */
   }
   .menu-section aside, .menu-section i {
-    transition: all .25s ease;
+    transition: all .33s ease;
    }
   .menu-section i {
    position: unset;
@@ -658,6 +656,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   .menu-section:hover aside i {
    transform: rotate(0deg);
