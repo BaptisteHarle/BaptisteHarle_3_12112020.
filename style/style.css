@@ -310,6 +310,7 @@ article h3 {
 }
 .far.fa-heart {
   font-weight: 400;
+  transition: all ease .75s;
 }
 
 .far.fa-heart:hover {
