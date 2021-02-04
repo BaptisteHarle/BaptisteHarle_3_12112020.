@@ -66,6 +66,11 @@ figure {
   padding: 20px;
 }
 
+.footer a, footer a:visited {
+  text-decoration: none !important;
+  color: var(--white) !important;
+}
+
 .footer--logo {
   -webkit-filter: invert(100%);
   filter: invert(100%);
@@ -157,6 +162,12 @@ button {
   color: var(--white);
   box-shadow: var(--shadow);
   border: unset;
+  transition: all .33s ease;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.4;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 section button {
@@ -306,6 +317,7 @@ article h3 {
 }
 .far.fa-heart {
   font-weight: 400;
+  transition: all ease 1.1s;
 }
 
 .far.fa-heart:hover {
@@ -325,15 +337,16 @@ article h3 {
   margin-top: -29%;
 }
 
-.restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
-  /* padding: unset;
-  margin: unset; */
+.restaurants__restaurant__infos__text {
+  height: 100%;
 }
 
 .restaurants__restaurant__infos__text--subtitle {
   font-weight: 200;
   font-size: 16px;
   margin-top: 6px;
+  width: 220px;
+  text-align: left;
 }
 
 .restaurants__restaurant__infos i {
@@ -353,7 +366,10 @@ img {
 * Restaurants
 *
 **/
-
+section p, h5 {
+  max-width: 80%;
+  text-overflow: ellipsis;
+}
 main {
   background-color: var(--lightgrey);
   border-top-left-radius: 40px;
@@ -375,10 +391,10 @@ main {
    overflow: hidden;
    box-shadow: var(--shadow);
    opacity: 0;
-    margin-top: 20px;
-    animation-duration: 1.5s;
-    animation-name: smooth-appear;
-    animation-fill-mode: forwards;
+  margin-top: 20px;
+  animation-duration: 1.5s;
+  animation-name: smooth-appear;
+  animation-fill-mode: forwards;
 }
 .menu-section:nth-of-type(1) {
   animation-delay: 250ms;
@@ -411,12 +427,12 @@ main {
  /* margin-left: 75px; */
 }
 .menu-section aside, .menu-section i, .menu-section .price {
-  transition: all .25s ease;
+  transition: all .75s ease;
  }
 .menu-section i {
  position: unset;
  color: white;
- transform: rotate(180deg);
+ transform: rotate(360deg);
 }
 .menu-section:hover {
  cursor: pointer;
@@ -435,6 +451,21 @@ main {
 .menu-section:hover aside i {
  transform: rotate(0deg);
 }
+.plat-desc {
+  text-overflow: ellipsis;
+  display: block;
+  width: 320px;
+  overflow: hidden;     
+  white-space: nowrap;
+  transition: all .75s ease;
+  /* width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   */
+}
+.menu-section:hover .plat-desc {
+  width: 220px;
+}
 p {
  margin-top: 30px;
  font-size: 12px;
@@ -449,6 +480,128 @@ h5 {
    margin-top: -20px;
    margin-left: 16px;
    margin-bottom: 18px;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-name: disappear;
+  animation-fill-mode: forwards;
+}
+.loader {
+  color: var(--third);
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+/**
+* Ordinateurs
+*/
+@media (min-width : 1025px) {
+  .menu-section {
+    position: relative !important;
+    height: 130px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu-section aside{
+    display: flex !important;
+    position: absolute !important;
+    right: unset !important;
+    bottom: 0 !important;
+    height: 0px !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--third);
+    transition: all .5s ease !important;
+  }
+
+  .menu-section:hover aside {
+    height: 130px !important;
+  }
+
+ .menu-section p, .menu-section h5 {
+   width: 100% !important;
+   text-align: center;
+   margin: auto !important;
+ }
+
 }
 
 /**
@@ -593,7 +746,8 @@ h5 {
     margin-top: -16%;
   }
   .restaurants__restaurant__infos__text--subtitle {
-    margin-top: 30px
+    margin-top: 30px;
+    text-align: left;
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
@@ -679,5 +833,16 @@ h5 {
   to {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+@keyframes disappear {
+  from {
+    /* display: block; */
+    height: 100vh;
+  }
+  to {
+    /* display: none; */
+    height: 0px;
   }
 }
