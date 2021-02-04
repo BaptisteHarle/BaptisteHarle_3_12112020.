@@ -331,8 +331,7 @@ article h3 {
 }
 
 .restaurants__restaurant__infos__text--title, .restaurants__restaurant__infos__text--subtitle {
-  /* padding: unset;
-  margin: unset; */
+  text-align: left;
 }
 
 .restaurants__restaurant__infos__text--subtitle {
@@ -682,7 +681,8 @@ h5 {
     margin-top: -16%;
   }
   .restaurants__restaurant__infos__text--subtitle {
-    margin-top: 30px
+    margin-top: 30px;
+    text-align: left;
   }
   .restaurants__restaurant--preview--new {
     margin-top: 10px;
