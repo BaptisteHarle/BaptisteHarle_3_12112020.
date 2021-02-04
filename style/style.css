@@ -358,7 +358,10 @@ img {
 * Restaurants
 *
 **/
-
+section p, h5 {
+  max-width: 80%;
+  text-overflow: ellipsis;
+}
 main {
   background-color: var(--lightgrey);
   border-top-left-radius: 40px;
